@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../static/style.css"  />
+  <title>Link Shourtcut</title>
+</head>
+<body>
+     
+    
+<div class="flex justify-center items-center py-20 bg-blue-200 h-screen">
+        <div class="form bg-gray-800 lg:w-4/12 md:w-8/12 sm:10/12 w-full  px-12 py-16   font-medium shadow-2xl">
+        <h1 class="text-white uppercase text-2xl text-center pb-12">Link Shourtcut</h1>
+
+        <form method = "POST">
+          <span class="">
+            <input type="link" name="link" id="link" class="rounded outline-none bg-gray-700 p-2 pl-4 mb-10 w-full  "placeholder="https://yourlink.com">
+            <span class="flex justify-end relative -left-3" style="bottom: 68px;">
+                <i class="fa-solid fa-link"></i>
+            </span>
+
+          </span>
+          {% if flag == 1 %}
+          <div class="row " style="margin-bottom:20px;">
+          <a class="text-white  text-xl text-center pb-12" href="{{link}}">{{link}}</a>
+        </div>
+          {% endif %}
+          <span class="row ">
+          <button class="bg-blue-400 px-6 text-white rounded py-1">Shourtcut</button>
+        </span>
+        </form>
+      </div>
+      </div>
+</body>
+</html>
